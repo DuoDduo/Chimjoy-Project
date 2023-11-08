@@ -1,0 +1,488 @@
+
+     <!-- 
+        - #FEATURED CAR
+      -->
+
+      <!-- <section class="section featured-car" id="featured-car">
+        <div class="containers">
+          <div class="heading">
+            <span>Available Cars</span>
+            <h1>Make a Choice</h1>
+        </div>
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Car Listings</h2>
+
+            <a href="carlist.html" class="featured-car-link">
+              <span>View more</span>
+
+              <i class="fas fa-arrow-alt-circle-right"></i>
+
+            </a>
+          </div>
+
+          <ul class="featured-car-list">
+
+            <li>
+              <div class="featured-car-card">
+            
+                <figure class="card-banner">
+                  <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300" class="w-100">
+                </figure>
+            
+                <div class="card-content">
+            
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Toyota RAV4</a>
+                    </h3>
+            
+                    <data class="year" value="2021">2021</data>
+                  </div>
+            
+                  <ul class="card-list">
+            
+                    <li class="card-list-item">
+                      <i class="fas fa-users"></i>
+            
+                      <span class="card-item-text">4 People</span>
+                    </li>
+            
+                    <li class="card-list-item">
+                      <i class="fas fa-bolt"></i>
+            
+                      <span class="card-item-text">Hybrid</span>
+                    </li>
+            
+                    <li class="card-list-item">
+                      <i class="fas fa-tachometer-alt"></i>
+            
+                      <span class="card-item-text">6.1km / 1-litre</span>
+                    </li>
+            
+                    <li class="card-list-item">
+                      <i class="fas fa-cogs"></i>
+            
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+            
+                  </ul>
+            
+                  <div class="card-price-wrapper">
+            
+                    <p class="card-price">
+                      <strong>$440</strong> / month
+                    </p>
+            
+            
+                    <button class="btns rent" ><a href="carlist.html" style="text-decoration: none; color: white;">Rent Now</a></button>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            </li>
+          
+            <li>
+              <div class="featured-car-card">
+            
+                <figure class="card-banner">
+                  <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300" class="w-100">
+                </figure>
+            
+                <div class="card-content">
+            
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">BMW 3 Series</a>
+                    </h3>
+            
+                    <data class="year" value="2019">2019</data>
+                  </div>
+            
+                  <ul class="card-list">
+            
+                    <li class="card-list-item">
+                      <i class="fas fa-users"></i>
+            
+                      <span class="card-item-text">4 People</span>
+                    </li>
+            
+                    <li class="card-list-item">
+                      <i class="fas fa-gas-pump"></i>
+            
+                      <span class="card-item-text">Gasoline</span>
+                    </li>
+            
+                    <li class="card-list-item">
+                      <i class="fas fa-tachometer-alt"></i>
+            
+                      <span class="card-item-text">8.2km / 1-litre</span>
+                    </li>
+            
+                    <li class="card-list-item">
+                      <i class="fas fa-cogs"></i>
+            
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+            
+                  </ul>
+            
+                  <div class="card-price-wrapper">
+            
+                    <p class="card-price">
+                      <strong>$350</strong> / month
+                    </p>
+            
+                    <button class="btns rent" ><a href="carlist.html" style="text-decoration: none; color: white;">Rent Now</a></button>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            </li>
+            
+            <li>
+              <div class="featured-car-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440" height="300" class="w-100">
+                </figure>
+                <div class="card-content">
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Volkswagen T-Cross</a>
+                    </h3>
+                    <data class="year" value="2020">2020</data>
+                  </div>
+                  <ul class="card-list">
+                    <li class="card-list-item">
+                      <i class="fas fa-users"></i>
+                      <span class="card-item-text">4 People</span>
+                    </li>
+                    <li class="card-list-item">
+                      <i class="fas fa-gas-pump"></i>
+                      <span class="card-item-text">Gasoline</span>
+                    </li>
+                    <li class="card-list-item">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <span class="card-item-text">5.3km / 1-litre</span>
+                    </li>
+                    <li class="card-list-item">
+                      <i class="fas fa-cogs"></i>
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+                  </ul>
+                  <div class="card-price-wrapper">
+                    <p class="card-price">
+                      <strong>$400</strong> / month
+                    </p>
+                    <button class="btns rent" ><a href="carlist.html" style="text-decoration: none; color: white;">Rent Now</a></button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+              <li>
+              <div class="featured-car-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/car-4.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440" height="300" class="w-100">
+                </figure>
+                <div class="card-content">
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Cadillac Escalade</a>
+                    </h3>
+                    <data class="year" value="2020">2020</data>
+                  </div>
+                  <ul class="card-list">
+                    <li class="card-list-item">
+                      <i class="fas fa-users"></i>
+                      <span class="card-item-text">4 People</span>
+                  </li>
+                  <li class="card-list-item">
+                    <i class="fas fa-gas-pump"></i>
+                    <span class="card-item-text">Gasoline</span>
+                  </li>
+                  <li class="card-list-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span class="card-item-text">7.7km / 1-litre</span>
+                  </li>
+                  <li class="card-list-item">
+                    <i class="fas fa-cogs"></i>
+                    <span class="card-item-text">Automatic</span>
+                  </li>
+                  </ul>
+                <div class="card-price-wrapper">
+                  <p class="card-price">
+                    <strong>$620</strong> / month
+                  </p>
+                  <button class="btns rent" ><a href="carlist.html" style="text-decoration: none; color: white;">Rent Now</a></button>
+                </div>
+          </div>
+        </div>
+              </li>
+
+              <li>
+              <div class="featured-car-card">
+                  <figure class="card-banner">
+                  <img src="./assets/images/car-5.jpg" alt="BMW 4 Series GTI 2021" loading="lazy" width="440" height="300" class="w-100">
+                  </figure>
+                  <div class="card-content">
+                  <div class="card-title-wrapper">
+                      <h3 class="h3 card-title">
+                      <a href="#">BMW 4 Series GTI</a>
+                      </h3>
+                      <data class="year" value="2021">2021</data>
+                  </div>
+                  <ul class="card-list">
+                      <li class="card-list-item">
+                      <i class="fas fa-users"></i>
+                      <span class="card-item-text">4 People</span>
+                      </li>
+                      <li class="card-list-item">
+                      <i class="fas fa-gas-pump"></i>
+                      <span class="card-item-text">Gasoline</span>
+                      </li>
+                      <li class="card-list-item">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <span class="card-item-text">7.6km / 1-litre</span>
+                      </li>
+                      <li class="card-list-item">
+                      <i class="fas fa-cogs"></i>
+                      <span class="card-item-text">Automatic</span>
+                      </li>
+                  </ul>
+                  <div class="card-price-wrapper">
+                      <p class="card-price">
+                      <strong>$530</strong> / month
+                      </p>
+                      <button class="btns rent" ><a href="carlist.html" style="text-decoration: none; color: white;">Rent Now</a></button>
+                  </div>
+                  </div>
+              </div>
+              </li>
+
+              <li>
+                  <div class="featured-car-card">
+                      <figure class="card-banner">
+                      <img src="./assets/images/car-6.jpg" alt="BMW 4 Series 2019" loading="lazy" width="440" height="300" class="w-100">
+                      </figure>
+                      <div class="card-content">
+                      <div class="card-title-wrapper">
+                          <h3 class="h3 card-title">
+                          <a href="#">BMW 4 Series</a>
+                          </h3>
+                          <data class="year" value="2019">2019</data>
+                      </div>
+                      <ul class="card-list">
+                          <li class="card-list-item">
+                          <i class="fas fa-users"></i>
+                          <span class="card-item-text">4 People</span>
+                          </li>
+                          <li class="card-list-item">
+                          <i class="fas fa-gas-pump"></i>
+                          <span class="card-item-text">Gasoline</span>
+                          </li>
+                          <li class="card-list-item">
+                          <i class="fas fa-tachometer-alt"></i>
+                          <span class="card-item-text">7.2km / 1-litre</span>
+                          </li>
+                          <li class="card-list-item">
+                          <i class="fas fa-cogs"></i>
+                          <span class="card-item-text">Automatic</span>
+                          </li>
+                      </ul>
+                      <div class="card-price-wrapper">
+                          <p class="card-price">
+                          <strong>$490</strong> / month
+                          </p>
+                          <button class="btns rent" ><a href="carlist.html" style="text-decoration: none; color: white;">Rent Now</a></button>
+                      </div>
+                      </div>
+                  </div>
+              </li>
+
+
+          </ul>
+
+        </div>
+      </section> -->
+
+    
+<!-- <div id="bookingModal" class="modal ">
+  <div class="modal-content book">
+      <span class="close" id="bookingClose">&times;</span>
+      <h2>Booking Form</h2>
+      <form action="">
+          <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+              <span>Pick up Location</span>
+              <input type="location" placeholder="Location" value="">
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+              <span>Destination</span>
+              <input type="text" placeholder="Destination" value="">
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+              <span>Date</span>
+              <input type="date" value="" placeholder="" >
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+              <span>Time</span>
+              <input type="time"value="" placeholder="Time" >
+          </div>
+          <button data-aos="zoom-in" data-aos-delay="450" type="submit" value="Reserve Car" class="btn" style="color: white; ">
+              <a href="contact.html"  style="text-decoration: none; color: white;">Pay Now</a> </button>
+
+          
+      </form>
+  </div>
+</div> -->
+      
+
+
+  
+
+   
+
+
+
+    <!-- review section starts  -->
+
+    <!-- <section class="review">
+
+        <div class="box-container" data-aos="fade-right" data-aos-delay="300">
+
+            <div class="box">
+                <p>"I've rented from several car rental companies before, but this one stands out. Affordable prices, clean cars, and friendly staff. I highly recommend them!"</p>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>designer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p>"The selection of vehicles is impressive. Whether you need a compact car for city driving or a spacious SUV for a family trip, they have you covered."</p>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>designer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p>"The online booking process is user-friendly, and I love the convenience of reserving a car in advance. It saves me time at the rental counter."</p>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>designer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p>"The customer service here is outstanding. They helped me choose the perfect car for my road trip, and I couldn't be happier with the experience."
+
+                </p>
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>designer</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content" data-aos="fade-left" data-aos-delay="600">
+            <span>testimonials</span>
+            <h3>Reviews from our clients</h3>
+            <p>At ChimJoy Car Hire, we are
+              dedicated to bridging the gap between the untrusted high-priced car hire services and the
+              numerous unorganized mediocre taxis that operate within Owerri Airport.</p>
+        </div>
+
+    </section> -->
+
+    <!-- review section ends -->
+
+    <!-- banner section starts  -->
+
+    <!-- <div class="banner">
+
+        <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+            <span>start your adventures</span>
+            <h3>Journey With Us</h3>
+            <p>Whether you're headed to a special event, embarking on a corporate
+              trip, shuttling between the airport and your hotel, or simply seeking a weekend getaway, we are
+              here to serve you with utmost dedication.</p>
+            <a href="carlist.html" class="btn">book now</a>
+        </div>
+
+    </div> -->
+
+    <!-- banner section ends -->
+
+    <!-- blogs section starts  -->
+
+    <!-- <section class="blogs" id="blogs">
+
+        <div class="heading">
+            <span>blogs & posts</span>
+            <h1>Experience in words</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up" data-aos-delay="150">
+                <div class="image">
+                    <img src="images/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">One Mile At A Time.</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus!</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 21st may, 2021</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+                <div class="image">
+                    <img src="images/blog-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Local Adventurer</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus!</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 21st may, 2021</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="450">
+                <div class="image">
+                    <img src="images/blog-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">The Blonde Abroad</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus!</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i> 21st may, 2021</a>
+                        <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- blogs section ends -->

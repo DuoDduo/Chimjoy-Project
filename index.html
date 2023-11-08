@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChimJoy</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"><span>CHIM</span>JOY
+        </a>
+
+        <nav class="navbar">
+            <!-- <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html" style="color: #007bff;">Home</a> -->
+            <!-- <a data-aos="zoom-in-left" data-aos-delay="1150" href="booking.html">Ride</a>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="carlist.html">Rent</a>
+            
+            <a data-aos="zoom-in-left" data-aos-delay="450" href="about.html">About us</a> -->
+            <!-- <a data-aos="zoom-in-left" data-aos-delay="600" href="contact.html">Contact us</a> -->
+        
+           
+
+            
+        <a data-aos="fade-up" data-aos-delay="600" href="#" class="btn" id="loginButton" style="color: white; ">LOGIN</a>
+        <a data-aos="fade-up" data-aos-delay="750" href="#" class="btn" style="background-color: #28a745; color: white; " id="registerButton">REGISTER</a>
+        
+       
+
+    
+        </nav>
+        <!-- <div class="user-profile">
+          <div class="profile-dropdown">
+              <img src="./assets/images/comment-author-01.jpg" alt="User Profile" class="profile-img">
+              <div class="user-info">
+                  <span class="user-name">John Doe</span>
+                  <span class="user-email">john@example.com</span>
+              </div>
+              <!-- <div class="dropdown-icon"><i class="fas fa-chevron-down"></i></div>
+              <div class="dropdown-content">
+                  <ul class="user-details">
+                      <li><a href="#">Profile</a></li>
+                      <li><a href="#">Settings</a></li>
+                      <li><a href="#">Logout</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div> -->
+      
+        <!-- <a data-aos="zoom-in-left" data-aos-delay="1300" href="#book-form" class="btn">book now</a> -->
+        
+      
+    </header>
+
+    
+    <!-- Modal for Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="loginClose">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <!-- Login form fields here -->
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required placeholder="Enter email ">
+                <br>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required placeholder=" password">
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+ <!-- Modal for Register -->
+ <div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="registerClose">&times;</span>
+        <h2>Register</h2>
+        <form id="registerForm">
+            <!-- Registration form fields here -->
+            <label for="registerName">Full Name:</label>
+            <input type="text" id="registerName" name="registerName" required placeholder="enter full name">
+            <br>
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" name="registerEmail" required placeholder="enter email">
+            <br>
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" name="registerPassword" required>
+            <br>
+            <label for="registerPassword">Contact</label>
+            <input type="number" required placeholder="add contact number">
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span data-aos="zoom-in" data-aos-delay="150">Ride Smart, Ride Safe.</span>
+            <!-- <h3 data-aos="fade-up" data-aos-delay="300">Your journey begins here</h3> -->
+            <p data-aos="fade-up" data-aos-delay="450">Explore our meticulously curated fleet of vehicles, ranging from sleek and agile sports cars to spacious and luxurious SUVs. <br>We have the perfect car to suit your needs</p>
+            <a data-aos="fade-up" data-aos-delay="600" href="booking.html" class="btn">Book a Ride Now</a>
+            <a data-aos="fade-up" data-aos-delay="600" href="carlist.html" class="btn" style="background-color: #28a745;">Rent a Car</a>
+           
+        </div>
+        
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- booking form section starts  -->
+
+    <section class="book-form" id="book-form">
+    <h2>How It Works</h2>
+    
+        <form action="">
+            <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+                <span>Add Pick up Location</span>
+                <input type="location" placeholder="Location" value="" disabled>
+              
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+                <span>Add Destination</span>
+                <input type="text" placeholder="Destination" value="" disabled>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+                <span>Choose Date</span>
+
+                <input type="date" value="" placeholder="" disabled>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+                <span>Choose Time</span>
+                <input type="time"value="" placeholder="Time" disabled >
+            </div>
+           
+            <button data-aos="zoom-in" data-aos-delay="450" type="submit" value="" class="btn formbtn" ><a href="booking.html" style="color: white;">Book a Ride Now</a></button>
+
+            
+        </form>
+
+    </section>
+
+    <!--booking form section ends -->
+
+       <!-- about section starts  -->
+
+      
+
+       <!-- <section class="about" id="about" style="margin-top: 6%;">
+
+        <div class="video-container" data-aos="fade-right" data-aos-delay="160">
+            <img src="./assets/images/african-american-business-man-car.jpg" muted autoplay loop class="image" style="border-radius:0%;">
+        </div>
+
+        <div class="content" data-aos="fade-left" data-aos-delay="300">
+            <span>Who we are ?</span>
+            <h3>A Topnotch Brand for you</h3>
+            <p>Welcome to ChimJoy Car Hire, We are proud to be a subsidiary of Chimjoy Logistics Services
+                Limited, a leading logistics firm operating in Owerri, Nigeria. At ChimJoy Car Hire, we are
+                dedicated to bridging the gap between the untrusted high-priced car hire services and the
+                numerous unorganized mediocre taxis that operate within Owerri Airport.</p>
+            <a href="about.html" class="btn">Read more</a>
+        </div>
+
+    </section> -->
+
+    <!-- about section ends -->
+   
+     <!-- destination section starts  -->
+
+
+
+     <!-- footer section starts  -->
+
+     <section class="footer">
+
+      <div class="box-container">
+  
+          <div class="box" data-aos="fade-up" data-aos-delay="150">
+              <a href="#" class="logo"> <span>CHIM</span>JOY</a>
+              <p>For inquiries, reservations, or to experience our exceptional car hire services, please don't
+                  hesitate to contact us:</p>
+              <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+  
+          <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3>Quick links</h3>
+              <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+              <a href="booking.html" class="links"> <i class="fas fa-arrow-right"></i>Ride </a>
+              <a href="carlist.html" class="links"> <i class="fas fa-arrow-right"></i> Rent </a>
+              <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+              <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i>Contact Us</a>
+              
+          </div>
+  
+          <div class="box" data-aos="fade-up" data-aos-delay="350">
+              <h3>Contact info</h3>
+              <p> <i class="fas fa-map"></i> Corporate Office:
+                  65 Christ Church Road, Owerri, Imo State. </p>
+              <p> <i class="fas fa-phone"></i> +2348077880262 </p>
+              <p> <i class="fas fa-envelope"></i> hq@chimjoylogistics.com.ng </p>
+              <p> <i class="fas fa-clock"></i> 7:00am - 10:00pm </p>
+          </div>
+  
+          <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3>Newsletter</h3>
+              <p>Subscribe for latest updates</p>
+              <form action="">
+                  <input type="email" name="" placeholder="Enter your email" class="email" id="">
+                  <input type="submit" value="Subscribe" class="btn">
+              </form>
+          </div>
+  
+      </div>
+  
+  </section>
+  
+  <div class="credit"><p> Copyright @  Chimjoy logistics 2023 All rights reserved!</p>
+  <p>designed by <a href="https://bestlinkdigitaltech.com/" target="_blank" style="cursor: pointer; color: #007bff;"> Best Link Digital Tech</a></p></div>
+  
+  <!-- footer section ends -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 800,
+            offset: 150,
+        });
+
+    </script>
+
+</body>
+
+</html>

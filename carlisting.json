@@ -1,0 +1,196 @@
+[
+  {
+    "id": "car7",
+    "car": {
+      "name": "Volvo XC90",
+      "year": 2021,
+      "image": "images (7).jpg",
+      "description": [
+        "fa-users 4 People",
+        "fa-gas-pump Gasoline",
+        "fa-tachometer-alt 6.1km / 1-litre",
+        "fa-cogs Automatic"
+      ],
+      "price": 440,
+      "priceperday": 400
+    }
+  },
+  {
+    "id": "car8",
+    "car": {
+      "name": "Renault Master",
+      "year": 2019,
+      "image": "carimage (1).jpg",
+      "description": [
+        "fa-users 4 People",
+        "fa-gas-pump Gasoline",
+        "fa-tachometer-alt 6.1km / 1-litre",
+        "fa-cogs Automatic"
+      ],
+      "price": 350,
+      "priceperday": 400
+    }
+  },
+  {
+    "id": "car9",
+    "car": {
+      "name": "Renault Master",
+      "year": 2020,
+      "image": "carimage (2).jpg",
+      "description": [
+        "fa-users 4 People",
+        "fa-gas-pump Gasoline",
+        "fa-tachometer-alt 6.1km / 1-litre",
+        "fa-cogs Automatic"
+      ],
+      "price": 400,
+      "priceperday": 400
+    }
+  },
+  {
+    "id": "car10",
+    "car": {
+      "name": " Audi e-tron",
+      "year": 2020,
+      "image": "carimage (3).jpg",
+      "description": [
+        "fa-users 4 People",
+        "fa-gas-pump Gasoline",
+        "fa-tachometer-alt 6.1km / 1-litre",
+        "fa-cogs Automatic"
+      ],
+      "price": 400,
+      "priceperday": 400
+    }
+  },
+  {
+    "id": "car11",
+    "car": {
+      "name": "Honda Civic",
+      "year": 2023,
+      "image": "carimage (4).jpg",
+      "description": [
+        "fa-users 4 People",
+        "fa-gas-pump Gasoline",
+        "fa-tachometer-alt 6.1km / 1-litre",
+        "fa-cogs Automatic"
+      ],
+      "price": 400,
+      "priceperday": 400
+    }
+  },
+  {
+    "id": "car12",
+    "car": {
+      "name": "MINI Cooper",
+      "year": 2021,
+      "image": "carimage (5).jpg",
+      "description": [
+        "fa-users 4 People",
+        "fa-gas-pump Gasoline",
+        "fa-tachometer-alt 6.1km / 1-litre",
+        "fa-cogs Automatic"
+      ],
+      "price": 440,
+      "priceperday": 400
+    }
+  },
+    {
+      "id": "car1",
+      "car": {
+        "name": "Ford Mustang",
+        "year": 2021,
+        "image": "offer-6-720x480.jpg",
+        "description": [
+          "fa-users 4 People",
+          "fa-gas-pump Gasoline",
+          "fa-tachometer-alt 6.1km / 1-litre",
+          "fa-cogs Automatic"
+        ],
+        "price": 440,
+        "priceperday": 400
+      }
+    },
+    {
+      "id": "car2",
+      "car": {
+        "name": "Volkswagen Golf",
+        "year": 2019,
+        "image": "offer-5-720x480.jpg",
+        "description": [
+          "fa-users 4 People",
+          "fa-gas-pump Gasoline",
+          "fa-tachometer-alt 6.1km / 1-litre",
+          "fa-cogs Automatic"
+        ],
+        "price": 400,
+        "priceperday": 400
+      }
+    },
+    {
+      "id": "car3",
+      "car": {
+        "name": "Jetta Hybrid",
+        "year": 2020,
+        "image": "offer-4-720x480.jpg",
+        "description": [
+          "fa-users 4 People",
+          "fa-gas-pump Gasoline",
+          "fa-tachometer-alt 6.1km / 1-litre",
+          "fa-cogs Automatic"
+        ],
+        "price": 400,
+        "priceperday": 400
+      }
+    },
+    {
+      "id": "car4",
+      "car": {
+        "name": "Hyundai 110",
+        "year": 2020,
+        "image": "offer-3-720x480.jpg",
+        "description": [
+          "fa-users 4 People",
+          "fa-gas-pump Gasoline",
+          "fa-tachometer-alt 6.1km / 1-litre",
+          "fa-cogs Automatic"
+        ],
+        "price": 400,
+        "priceperday": 400
+      }
+    },
+    {
+      "id": "car5",
+      "car": {
+        "name": "Toyota RAV4",
+        "year": 2020,
+        "image": "offer-2-720x480.jpg",
+        "description": [
+          "fa-users 4 People",
+          "fa-gas-pump Gasoline",
+          "fa-tachometer-alt 6.1km / 1-litre",
+          "fa-cogs Automatic"
+        ],
+        "price": 400,
+        "priceperday": 400
+      }
+    },
+    {
+      "id": "car6",
+      "car": {
+        "name": "Dacia Logan",
+        "year": 2021,
+        "image": "offer-1-720x480.jpg",
+        "description": [
+          "fa-users 4 People",
+          "fa-gas-pump Gasoline",
+          "fa-tachometer-alt 6.1km / 1-litre",
+          "fa-cogs Automatic"
+        ],
+        "price": 440,
+        "priceperday": 400
+      }
+    }
+   
+  ]
+  

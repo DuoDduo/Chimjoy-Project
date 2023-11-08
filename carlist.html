@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChimJoy</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ 
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Style for the form */
+#bookingForm {
+    /* padding: 15px; */
+    /* background-color: #007BFF; */
+    border-radius: 5px;
+    /* color: white; */
+}
+#bookingForm span{
+    /* font-weight: bold;  */
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+   
+}
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.778);
+    backdrop-filter: blur(5px);
+}
+
+.title-wrapper input{
+    padding: 1em;
+    background: #007BFF; 
+    color: white;
+    border-radius: 10px;
+}
+.title-wrapper input::placeholder{
+    padding: .3em .6em;
+    background: #007BFF; 
+    color: white;
+}
+.title-wrapper button{
+    padding: 1em;
+    background: #28a745; 
+    color: white;
+    border-radius: 10px;
+}
+#totalPricePerHour{
+    color: #000;
+}
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"><span>CHIM</span>JOY
+        </a>
+
+        <nav class="navbar">
+            <a data-aos="zoom-in-left" data-aos-delay="300" href="dashboard.html">Home</a>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="booking.html" >Ride</a>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="carlist.html"style="color: #007bff;" >Rent</a>
+            
+            <a data-aos="zoom-in-left" data-aos-delay="450" href="about.html" >About us</a>
+            <a data-aos="zoom-in-left" data-aos-delay="600" href="contact.html" >Contact us</a >
+    
+        </nav>
+
+        <!-- <div class="user-profile">
+        <div class="profile-dropdown">
+            <img src="./asset/img/5da839b0c6b3d.png" alt="User Profile" class="profile-img">
+            <div class="user-info">
+                <span class="user-name">John Doe</span>
+                <span class="user-email">john@example.com</span>
+            </div>
+            <div class="dropdown-icon"><i class="fas fa-chevron-down"></i></div>
+            <div class="dropdown-content">
+                <ul class="user-details">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        </div> -->
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span data-aos="zoom-in" data-aos-delay="150">Effortless Hiring</span>
+            <!-- <h3 data-aos="fade-up" data-aos-delay="300">Your journey begins here</h3> -->
+            <p data-aos="fade-up" data-aos-delay="450">Our User Friendly Interface makes renting a car a breeze. Complete the entire booking process in just a few clicks. Our platform is accessible anytime, anywhere at your convenience</p>
+            <a data-aos="fade-up" data-aos-delay="600" href="booking.html" class="btn">Book a Ride</a>
+            <a data-aos="fade-up" data-aos-delay="300" href="contact.html" class="btn" >Contact Us</a>
+        </div>
+
+    </section>
+    <section class="section featured-car" id="featured-car">
+        <div class="containers">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Car Listings</h2>
+             
+            <input type="text" id="filterName" placeholder="Filter by name">
+            <input type="number" id="filterMinPrice" placeholder="Minimum price">
+            <input type="number" id="filterMaxPrice" placeholder="Maximum price">
+            <button id="applyFilter">Apply Filter</button>
+            <button id="resetFilter">Reset Filter</button>
+          </div>
+
+          <ul class="featured-car-list" id="carList">
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <div id="bookingModal" class="modal rent-form">
+        <div class="rent-modal-content" >
+          
+            <form id="bookingForm" class=" con">
+               
+                <h1 style="color: #007BFF;">Car Hiring Form</h1>
+                <span class="close" style="color: #007BFF;">&times; close</span>
+                    <div class="renting-container" >
+                       
+                        <label style="display: flex; align-items: center;flex-direction: row; padding: 10px;">
+                            <h3 style="margin-right: 10px; color: #007BFF;">Rental Duration:</h3>
+                            <div style="margin-right: 10px;">
+                                <input type="radio" name="rentalDuration" value="hours" id="hoursOption" checked>
+                                Hours 
+                            </div>
+                            <div>
+                                <input type="radio" name="rentalDuration" value="days" id="daysOption">
+                                Days 
+                            </div>
+                        </label>
+                    </div>
+                
+    
+                <!-- Date and Time Fields for Hours Duration -->
+              <div id="hourFields" >
+                <div data-aos="zoom-in" data-aos-delay="300" class="renting-container" >
+                    <span>Pickup Date</span>
+                    <input type="date" value="" placeholder="" id="pickupDate"class="rent-input">
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="350" class="renting-container" >
+                    <span>Pickup Time</span>
+                    <input type="time" value="" placeholder="Time" id="pickupTime"class="rent-input" >
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="300"class="renting-container" >
+                    <span>Return Time</span>
+                    <input type="time" value="" placeholder="Time" id="returnTime"class="rent-input" >
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; gap:10px ;">
+                    <div data-aos="zoom-in" data-aos-delay="400"class="renting-container">
+                        <span>Number of Hours:</span>
+                        <input type="text" id="numberOfHours" value="0" readonly class="rent-input" >
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="300" class="renting-container">
+                        <span>Total Amount:</span>
+                        <p id="totalPricePerHour" style=" border: 1px solid #b7b4b4c2;padding: 10px 30px; border-radius: 6px;">₦0.00</p>
+                    </div> 
+                </div>
+              </div>
+    
+                <!-- Date Fields for Days Duration -->
+                <div id="dayFields" style="display: none;">
+                    <div data-aos="zoom-in" data-aos-delay="300"class="renting-container">
+                        <span>Pickup Date</span>
+                        <input type="date" value="" placeholder="" id="pickupDateDay" class="rent-input">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="300" class="renting-container" >
+                        <span>Return Date</span>
+                        <input type="date" value="" placeholder="" id="returnDate" class="rent-input">
+                    </div>  
+                    <div data-aos="zoom-in" data-aos-delay="450" class="renting-container">
+                        <span>Pickup Time</span>
+                        <input type="time" value="" placeholder="Time" id="pickupTime" class="rent-input">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="450" class="renting-container">
+                        <span>Return Time</span>
+                        <input type="time" value="" placeholder="Time" id="returnTime" class="rent-input">
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;" >
+                        <div data-aos="zoom-in" data-aos-delay="450" class="renting-container" >
+                            <span>Number of Days:</span>
+                            <input type="text" id="numberOfDays" value="0" readonly class="rent-input">
+                        </div>
+                        <div data-aos="zoom-in" data-aos-delay="450" class="renting-container">
+                            <span>Total Amount:</span>
+                            <p id="totalPricePerDay"  style=" border: 1px solid #b7b4b4c2;padding: 10px 30px; border-radius: 6px;">₦0.00</p>
+                        </div>  
+                    </div>
+                </div>
+    
+                <!-- Other Form Fields -->
+              <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 10px;">
+                <div data-aos="zoom-in" data-aos-delay="150" class="renting-container">
+                    <label for="carName">Car Name:</label>
+                    <span type="text" id="carName" readonly style=" border: 1px solid #b7b4b4c2;padding: 10px 30px; border-radius: 6px;"></span>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="150" class="renting-container" id="perhour" style="display: none;">
+                    <label for="carPricePerHour">
+                        Car Price Per Hour:
+                    </label>
+                    <span id="carPrice" readonly style=" border: 1px solid #b7b4b4c2;padding: 10px 30px; border-radius: 6px;" ></span>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="150" class="renting-container" id="perday" style="display: none; color: #000;">
+                    <label for="carPricePerDay">
+                        Car Price per Day:
+                    </label>
+                    <span id="carPricePerDay" readonly  style=" border: 1px solid #b7b4b4c2;padding: 10px 30px; border-radius: 6px;"></span>
+                </div>
+                <!-- <button data-aos="zoom-in" data-aos-delay="450" type="submit" value="Reserve Car" class="btn" style="color: white;">
+                    Pay Now
+                </button> -->
+              </div>
+             
+                
+              <button data-aos="zoom-in" data-aos-delay="450" type="submit" value="Reserve Car" class="btn" style="color: white;">
+                Pay Now
+            </button>
+               
+                <!-- Add more form fields as needed -->
+    
+               
+            </form>
+        </div>
+    </div>
+    
+
+
+  <!-- footer section starts  -->
+
+  <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <a href="#" class="logo"> <span>CHIM</span>JOY</a>
+            <p>For inquiries, reservations, or to experience our exceptional car hire services, please don't
+                hesitate to contact us:</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <h3>Quick links</h3>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+            <a href="booking.html" class="links"> <i class="fas fa-arrow-right"></i>Ride </a>
+            <a href="carlist.html" class="links"> <i class="fas fa-arrow-right"></i> Rent </a>
+            <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+            <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i>Contact Us</a>
+            
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="350">
+            <h3>Contact info</h3>
+            <p> <i class="fas fa-map"></i> Corporate Office:
+                65 Christ Church Road, Owerri, Imo State. </p>
+            <p> <i class="fas fa-phone"></i> +2348077880262 </p>
+            <p> <i class="fas fa-envelope"></i> hq@chimjoylogistics.com.ng </p>
+            <p> <i class="fas fa-clock"></i> 7:00am - 10:00pm </p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <h3>Newsletter</h3>
+            <p>Subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="Enter your email" class="email" id="">
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit">
+    <p> Copyright @  Chimjoy logistics 2023 All rights reserved!</p>
+    <p>designed by <a href="https://bestlinkdigitaltech.com/" target="_blank" style="cursor: pointer; color: #007bff;"> Best Link Digital Tech</a></p>
+</div>
+
+<!-- footer section ends -->
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="./js/carlist.js"></script>
+
+<script>
+
+    AOS.init({
+        duration: 800,
+        offset: 150,
+    });
+
+</script>
+
+</body>
