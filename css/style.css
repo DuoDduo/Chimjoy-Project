@@ -1172,9 +1172,9 @@ summary:hover .expand-icon {
     display: block;
   }
 
-  .home {
+  /* .home {
     margin-top: 10rem;
-  }
+  } */
 
   .home .content span {
     font-size: 8vw;
